@@ -4,6 +4,10 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
     private Node<K, V> root;
     private Node<K, V> nil;
 
+    public RBT() {
+        nil = new Node<K, V>(null, null, false, null);
+    }
+
     @Override
     public void setValue(K key, V value) {
 
@@ -59,6 +63,34 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
         private Node<K, V> rightSon;
         private K key;
         private boolean isRed;
+
+
+        Node(K _key, Node<K,V> _parent, V _value){
+            this.key = _key;
+            this.value = _value;
+            this.parent = _parent;
+            leftSon = (Node<K, V>) nil;
+            rightSon = (Node<K, V>) nil;
+            isRed = true;
+        }
+
+
+        Node(K _key, Node<K, V> _parent, boolean _red, V _value) {
+            this(_key, _parent, _value);
+            this.isRed = _red;
+        }
+
+        boolean isAlone() {
+            return leftSon == nil || rightSon == nil;
+        }
+
+        void paintRed() {
+            isRed = true;
+        }
+
+        void paintBlack() {
+            isRed = false;
+        }
     }
 
 }
