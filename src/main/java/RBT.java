@@ -1,7 +1,7 @@
 public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
 
 
-    private Node root;
+    private static Node root = null;
 
 
     @Override
@@ -14,4 +14,27 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
         return null;
     }
 
+    Node rotateLeft(Node myNode)
+    {
+        System.out.printf("left rotation!!\n");
+        Node child = myNode.right;
+        Node childLeft = child.left;
+
+        child.left = myNode;
+        myNode.right = childLeft;
+
+        return child;
+    }
+
+    Node rotateRight(Node myNode)
+    {
+        System.out.printf("right rotation\n");
+        Node child = myNode.left;
+        Node childRight = child.right;
+
+        child.right = myNode;
+        myNode.left = childRight;
+
+        return child;
+    }
 }
