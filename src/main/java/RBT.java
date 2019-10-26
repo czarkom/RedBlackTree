@@ -14,30 +14,29 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
         System.out.println(root.key);
         tree.setValue("t", 25);
         tree.setValue("m", 20);
-
-
         System.out.println("Values set");
         System.out.println(root.key);
 
-        tree.getValue("l");
+        tree.getValue("r");
 
     }
 
     @Override
     public void setValue(K key, V value) {
         if (key == null)
-            throw new IllegalArgumentException("Nie chce pustego klucza:(");
+            throw new IllegalArgumentException("You can't put empty key");
 
         else {
             root = insert(root, key, value);
+
             root.isRed = false;
         }
-
     }
 
     @Override
     public V getValue(K key) {
         Node<K, V> r = root;
+
         while (r != null) {
             K rval = r.key;
             if (key.compareTo(rval) < 0)
@@ -48,32 +47,40 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
                 break;
             }
         }
+
         if (r == null) {
             System.out.println("Value of given key not found");
             return null;
         } else {
             System.out.println("Value of the given key:" + r.value);
         }
+
         return r.value;
     }
 
     Node rotateLeft(Node<K, V> myNode) {
-        System.out.printf("left rotation!!\n");
+        System.out.println("Left rotation");
+
         Node child = myNode.right;
+
         Node childLeft = child.left;
 
         child.left = myNode;
+
         myNode.right = childLeft;
 
         return child;
     }
 
     Node rotateRight(Node<K, V> myNode) {
-        System.out.printf("right rotation\n");
+        System.out.println("Right rotation");
+
         Node child = myNode.left;
+
         Node childRight = child.right;
 
         child.right = myNode;
+
         myNode.left = childRight;
 
         return child;
@@ -81,7 +88,9 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
 
     void swapColors(Node node1, Node node2) {
         boolean temp = node1.isRed;
+
         node1.isRed = node2.isRed;
+
         node2.isRed = temp;
     }
 
@@ -97,21 +106,26 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
 
         if (key.compareTo(myNode.key) < 0)
             myNode.left = insert(myNode.left, key, value);
+
         else if (key.compareTo(myNode.key) > 1)
             myNode.right = insert(myNode.right, key, value);
+
         else if (key.compareTo(myNode.key) == 0) {
             myNode.value = value;
             return myNode;
         } else
             return myNode;
+
         if (isRed(myNode.right) && !isRed(myNode.left)) {
             myNode = rotateLeft(myNode);
             swapColors(myNode, myNode.left);
         }
+
         if (isRed(myNode.left) && isRed(myNode.left.left)) {
             myNode = rotateRight(myNode);
             swapColors(myNode, myNode.right);
         }
+
         if (isRed(myNode.left) && isRed(myNode.right)) {
             myNode.isRed = !myNode.isRed;
             myNode.right.isRed = false;
