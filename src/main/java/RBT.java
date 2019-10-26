@@ -79,9 +79,9 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V>{
         if (myNode == null)
             return new Node(key, value);
 
-        if (key.compareTo(myNode.key) == -1)
+        if (key.compareTo(myNode.key) < 0)
             myNode.left = insert(myNode.left, key, value);
-        else if (key.compareTo(myNode.key) == 1)
+        else if (key.compareTo(myNode.key) > 1)
             myNode.right = insert(myNode.right, key, value);
         else if (key.compareTo(myNode.key) == 0){
             myNode.value = value;
@@ -106,28 +106,22 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V>{
     }
 
     public static void main(String args[]){
-        RBT<Integer,Integer> tree = new RBT<>();
-        tree.setValue(24,25);
-        tree.setValue(23,128);
-        tree.setValue(22,543);
-        tree.setValue(21,32);
-        tree.setValue(20,259);
-        tree.setValue(19,43);
+        RBT<String,Integer> tree = new RBT<>();
+        tree.setValue("a",25);
+        tree.setValue("l",128);
+        tree.setValue("g",543);
+        tree.setValue("o",32);
+        tree.setValue("r",259);
+        tree.setValue("y",43);
         System.out.println(root.key);
-        tree.setValue(18,25);
-        tree.setValue(17,20);
-        tree.setValue(16,20);
-        tree.setValue(15,20);
-        tree.setValue(14,20);
-        tree.setValue(13,20);
-        tree.setValue(12,20);
-        tree.setValue(11,20);
-        tree.setValue(10,20);
+        tree.setValue("t",25);
+        tree.setValue("m",20);
+
 
         System.out.println("Values set");
         System.out.println(root.key);
 
-        tree.getValue(22);
+        tree.getValue("o");
 
     }
 }
