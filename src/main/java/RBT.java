@@ -31,24 +31,24 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
         if (root == null) {
             throw new IllegalStateException("You can't call this method for empty tree");
         }
-        Node<K, V> r = root;
-        while (r != null) {
-            K rval = r.key;
-            if (key.compareTo(rval) < 0)
-                r = r.left;
-            else if (key.compareTo(rval) > 0)
-                r = r.right;
-            else if (key.compareTo(rval) == 0) {
+        Node<K, V> actualNode = root;
+        while (actualNode != null) {
+            K nodeKey = actualNode.key;
+            if (key.compareTo(nodeKey) < 0)
+                actualNode = actualNode.left;
+            else if (key.compareTo(nodeKey) > 0)
+                actualNode = actualNode.right;
+            else if (key.compareTo(nodeKey) == 0) {
                 break;
             }
         }
-        if (r == null) {
+        if (actualNode == null) {
             System.out.println("Value of given key not found");
             return null;
         } else {
-            System.out.println("Value of the given key:" + r.value);
+            System.out.println("Value of the given key:" + actualNode.value);
         }
-        return r.value;
+        return actualNode.value;
     }
 
     Node rotateLeft(Node<K, V> myNode) {
