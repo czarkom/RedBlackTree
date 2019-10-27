@@ -1,7 +1,7 @@
 public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
     public Node root = null;
 
-    public static void main(String args[]) {
+    /*public static void main(String args[]) {
         RBT<String, Integer> tree = new RBT<>();
         tree.setValue("a", 25);
         tree.setValue("l", 128);
@@ -9,17 +9,16 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
         tree.setValue("o", 37);
         tree.setValue("r", 259);
         tree.setValue("y", 43);
-        System.out.println(tree.root.key);
         tree.setValue("t", 25);
         tree.setValue("m", 20);
-        System.out.println(tree.root.key);
-        tree.getValue("r");
-    }
+        tree.getValue("z");
+
+    }*/
 
     @Override
     public void setValue(K key, V value) {
-        if (key == null)
-            throw new IllegalArgumentException("You can't put empty key");
+        if (key == null || value == null)
+            throw new IllegalArgumentException("You can't put empty key or value");
         else {
             root = insert(root, key, value);
             root.isRed = false;
@@ -43,8 +42,7 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
             }
         }
         if (actualNode == null) {
-            System.out.println("Value of given key not found");
-            return null;
+            throw new NoKeyInTreeException();
         } else {
             System.out.println("Value of the given key:" + actualNode.value);
         }

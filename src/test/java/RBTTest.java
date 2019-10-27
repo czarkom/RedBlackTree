@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class RBTTest {
     RBT<String, Integer> tree = new RBT<>();
 
-    @org.junit.Test
+    @Test
     public void isValueFromGivenKeyCheckedCorrectly() {
         tree.setValue("a", 25);
         tree.setValue("l", 128);
@@ -20,7 +20,7 @@ public class RBTTest {
         assertEquals(128, (int) tree.getValue("l"));
     }
 
-    @org.junit.Test
+    @Test
     public void isRootCorrect() {
         tree.setValue("a", 25);
         tree.setValue("l", 128);
@@ -38,24 +38,50 @@ public class RBTTest {
         tree.setValue(null, 234);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void isNullNodeValueExceptionThrownCorrectly() {
+        tree.setValue("a", null);
+    }
+
     @Test(expected = IllegalStateException.class)
     public void isNullRootExceptionThrownCorrectly() {
         tree.getValue("o");
     }
 
     @Test
-    public void checkTimeforDifferentNumbersofData(){
+    public void checkTimeforDifferentNumbersofData() {
         RBT<Double, Double> tree = new RBT<>();
         double constValueforTest = 1;
         Random r = new Random();
-        for(int i = 100; i < 10000; i=i+100){
+        for (int i = 100; i < 10000; i = i + 100) {
             long x = System.nanoTime();
-            for (int j = 0; j < i; j++){
+            for (int j = 0; j < i; j++) {
                 tree.setValue(r.nextDouble(), constValueforTest);
             }
             long y = System.nanoTime();
-            long difference = y  - x;
+            long difference = y - x;
             System.out.println("Time of execution for\t" + i + "\telements:\t" + difference);
         }
+    }
+
+    @Test
+    public void isValueOverwriitenCorrectly(){
+        tree.setValue("a", 25);
+        tree.setValue("l", 128);
+        tree.setValue("g", 543);
+        tree.setValue("o", 37);
+        tree.setValue("r", 259);
+        tree.setValue("y", 43);
+        tree.setValue("t", 25);
+        tree.setValue("m", 20);
+
+        tree.setValue("g", 278);
+        assertEquals(278, (int) tree.getValue("g"));
+    }
+
+    @Test(expected = NoKeyInTreeException.class)
+    public void isNoKeyInTreeExceptionThrownCorrectly(){
+        tree.setValue("a",129);
+        tree.getValue("g");
     }
 }
