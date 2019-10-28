@@ -97,6 +97,27 @@ public class RBTTest {
     }
 
     @Test
+    public void isTreeInCorrectOrderWhenUsingKnownStructureData() {
+        tree.setValue("a", 25);
+        tree.setValue("l", 128);
+        tree.setValue("g", 543);
+        tree.setValue("o", 37);
+        tree.setValue("r", 259);
+        tree.setValue("y", 43);
+        tree.setValue("t", 25);
+        tree.setValue("m", 20);
+
+        assertEquals("o", tree.root.key);
+        assertEquals("g", tree.root.left.key);
+        assertEquals("t", tree.root.right.key);
+        assertEquals("a", tree.root.left.left.key);
+        assertEquals("m", tree.root.left.right.key);
+        assertEquals("r", tree.root.right.left.key);
+        assertEquals("y", tree.root.right.right.key);
+        assertEquals("l", tree.root.left.right.left.key);
+    }
+
+    @Test
     public void checkHowLongisBeingInsertedElementAfterSettingEarlierNElements() throws IOException {
         Random random = new Random(System.currentTimeMillis());
         Workbook workbook = new XSSFWorkbook();

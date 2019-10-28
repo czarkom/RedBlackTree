@@ -40,6 +40,7 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
         Node childLeft = child.left;
         child.left = myNode;
         myNode.right = childLeft;
+        System.out.println("Rotate left");
         return child;
     }
 
@@ -48,6 +49,7 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
         Node childRight = child.right;
         child.right = myNode;
         myNode.left = childRight;
+        System.out.println("Rotate right");
         return child;
     }
 
@@ -68,7 +70,7 @@ public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
             return new Node(key, value);
         if (key.compareTo(myNode.key) < 0)
             myNode.left = insert(myNode.left, key, value);
-        else if (key.compareTo(myNode.key) > 1)
+        else if (key.compareTo(myNode.key) > 0)
             myNode.right = insert(myNode.right, key, value);
         else if (key.compareTo(myNode.key) == 0) {
             myNode.value = value;
