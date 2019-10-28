@@ -1,20 +1,6 @@
 public class RBT<K extends Comparable<K>, V> implements MapInterface<K, V> {
     public Node root = null;
 
-    /*public static void main(String args[]) {
-        RBT<String, Integer> tree = new RBT<>();
-        tree.setValue("a", 25);
-        tree.setValue("l", 128);
-        tree.setValue("g", 543);
-        tree.setValue("o", 37);
-        tree.setValue("r", 259);
-        tree.setValue("y", 43);
-        tree.setValue("t", 25);
-        tree.setValue("m", 20);
-        tree.getValue("z");
-
-    }*/
-
     @Override
     public void setValue(K key, V value) {
         if (key == null || value == null)

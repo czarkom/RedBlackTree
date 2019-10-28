@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e66afd2-3efe-408d-8302-0b70eb5689e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/NoKeyInTreeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MapInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MapInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RBTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBTTest.java" afterDir="false" />
     </list>
@@ -21,31 +20,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="442">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MapInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RedBlackTree.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/RBT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="169">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -53,28 +38,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/NoKeyInTreeException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-              <folding>
-                <element signature="e#95#96#0" expanded="true" />
-                <element signature="e#118#119#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RBTTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+            <state relative-caret-position="611">
+              <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1031#1032#0" expanded="true" />
-                <element signature="e#1071#1072#0" expanded="true" />
-                <element signature="e#1167#1168#0" expanded="true" />
-                <element signature="e#1207#1208#0" expanded="true" />
-                <element signature="e#1345#1346#0" expanded="true" />
+                <element signature="e#1489#1490#0" expanded="true" />
+                <element signature="e#1523#1524#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,8 +89,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/MapInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/NoKeyInTreeException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RBTTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/RBT.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RBTTest.java" />
       </list>
     </option>
   </component>
@@ -146,7 +125,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,11 +160,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572213613165" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572225557589" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Lab2/Stos" />
@@ -215,13 +194,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.RBTTest">
-    <configuration name="RBT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RBT" />
-      <module name="RedBlackTree" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RBTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RedBlackTree" />
       <option name="PACKAGE_NAME" value="" />
@@ -230,31 +202,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RBTTest.isNoKeyInTreeExceptionThrownCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RBTTest.checkHowLongisBeingInsertedElementAfterSettingEarlierNElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RedBlackTree" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RBTTest" />
-      <option name="METHOD_NAME" value="isNoKeyInTreeExceptionThrownCorrectly" />
+      <option name="METHOD_NAME" value="checkHowLongisBeingInsertedElementAfterSettingEarlierNElements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RBTTest.isNullNodeValueExceptionThrownCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RBTTest.checkTimeOfInsertingDifferentNumbersOfData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RedBlackTree" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RBTTest" />
-      <option name="METHOD_NAME" value="isNullNodeValueExceptionThrownCorrectly" />
+      <option name="METHOD_NAME" value="checkTimeOfInsertingDifferentNumbersOfData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RBTTest.isValueOverwriitenCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RBTTest.testRotateLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RedBlackTree" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RBTTest" />
-      <option name="METHOD_NAME" value="isValueOverwriitenCorrectly" />
+      <option name="METHOD_NAME" value="testRotateLeft" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBTTest.testRotateRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RedBlackTree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RBTTest" />
+      <option name="METHOD_NAME" value="testRotateRight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,10 +245,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RBTTest" />
-        <item itemvalue="Application.RBT" />
-        <item itemvalue="JUnit.RBTTest.isNoKeyInTreeExceptionThrownCorrectly" />
-        <item itemvalue="JUnit.RBTTest.isNullNodeValueExceptionThrownCorrectly" />
-        <item itemvalue="JUnit.RBTTest.isValueOverwriitenCorrectly" />
+        <item itemvalue="JUnit.RBTTest.testRotateLeft" />
+        <item itemvalue="JUnit.RBTTest.testRotateRight" />
+        <item itemvalue="JUnit.RBTTest.checkHowLongisBeingInsertedElementAfterSettingEarlierNElements" />
+        <item itemvalue="JUnit.RBTTest.checkTimeOfInsertingDifferentNumbersOfData" />
       </list>
     </recent_temporary>
   </component>
@@ -393,46 +375,53 @@
       <option name="project" value="LOCAL" />
       <updated>1572209892952</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="NoKeyInTreeException added">
+      <created>1572213641888</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1572213641888</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RBTTest - 2019.10.27 at 22h 24m 05s.xml">
+    <history-entry file="RBTTest_checkTimeforDifferentNumbersofData - 2019.10.28 at 01h 14m 27s.xml">
+      <configuration name="RBTTest.checkTimeforDifferentNumbersofData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_checkTimeOfInsertingDifferentNumbersOfData - 2019.10.28 at 01h 15m 10s.xml">
+      <configuration name="RBTTest.checkTimeOfInsertingDifferentNumbersOfData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_checkTimeOfInsertingDifferentNumbersOfData - 2019.10.28 at 01h 20m 19s.xml">
+      <configuration name="RBTTest.checkTimeOfInsertingDifferentNumbersOfData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_checkHowLongisBeingInsertedElementAfterSettingEarlierNElements - 2019.10.28 at 01h 21m 47s.xml">
+      <configuration name="RBTTest.checkHowLongisBeingInsertedElementAfterSettingEarlierNElements" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_testRotateRight - 2019.10.28 at 02h 00m 27s.xml">
+      <configuration name="RBTTest.testRotateRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_testRotateRight - 2019.10.28 at 02h 01m 49s.xml">
+      <configuration name="RBTTest.testRotateRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_testRotateRight - 2019.10.28 at 02h 02m 29s.xml">
+      <configuration name="RBTTest.testRotateRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_testRotateRight - 2019.10.28 at 02h 03m 50s.xml">
+      <configuration name="RBTTest.testRotateRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_testRotateLeft - 2019.10.28 at 02h 05m 21s.xml">
+      <configuration name="RBTTest.testRotateLeft" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest - 2019.10.28 at 02h 16m 55s.xml">
       <configuration name="RBTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_isNullNodeValueExceptionThrownCorrectly - 2019.10.27 at 22h 26m 09s.xml">
-      <configuration name="RBTTest.isNullNodeValueExceptionThrownCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_isNullNodeValueExceptionThrownCorrectly - 2019.10.27 at 22h 26m 59s.xml">
-      <configuration name="RBTTest.isNullNodeValueExceptionThrownCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest - 2019.10.27 at 22h 27m 05s.xml">
-      <configuration name="RBTTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_isNoKeyInTreeExceptionThrownCorrectly - 2019.10.27 at 22h 55m 43s.xml">
-      <configuration name="RBTTest.isNoKeyInTreeExceptionThrownCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_isNoKeyInTreeExceptionThrownCorrectly - 2019.10.27 at 22h 56m 17s.xml">
-      <configuration name="RBTTest.isNoKeyInTreeExceptionThrownCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_isNoKeyInTreeExceptionThrownCorrectly - 2019.10.27 at 22h 57m 09s.xml">
-      <configuration name="RBTTest.isNoKeyInTreeExceptionThrownCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_isNoKeyInTreeExceptionThrownCorrectly - 2019.10.27 at 22h 57m 17s.xml">
-      <configuration name="RBTTest.isNoKeyInTreeExceptionThrownCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_isNoKeyInTreeExceptionThrownCorrectly - 2019.10.27 at 22h 57m 31s.xml">
-      <configuration name="RBTTest.isNoKeyInTreeExceptionThrownCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_isNoKeyInTreeExceptionThrownCorrectly - 2019.10.27 at 22h 58m 59s.xml">
-      <configuration name="RBTTest.isNoKeyInTreeExceptionThrownCorrectly" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -441,7 +430,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32152975" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32152975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,7 +465,8 @@
     <MESSAGE value="small corrections" />
     <MESSAGE value="new tests added" />
     <MESSAGE value="time measure added" />
-    <option name="LAST_COMMIT_MESSAGE" value="time measure added" />
+    <MESSAGE value="NoKeyInTreeException added" />
+    <option name="LAST_COMMIT_MESSAGE" value="NoKeyInTreeException added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../Wykład/BST/BST_Java/RBT.java">
@@ -496,22 +486,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RedBlackTree.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MapInterface.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -520,36 +496,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NoKeyInTreeException.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#118#119#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RBTTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1345#1346#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="26">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NoKeyInTreeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RBT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="169">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RBTTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
